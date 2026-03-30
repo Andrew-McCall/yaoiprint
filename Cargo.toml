@@ -1,6 +1,6 @@
 [package]
 name = "yaoiprint"
-version = "1.69.0"
+version = "1.69.67"
 edition = "2024"
 description = "A terminal CLI that prints a randomly selected ASCII art image in a random color."
 license = "MIT"
@@ -15,5 +15,5 @@ name = "yaoiprint"
 path = "src/main.rs"
 
 [dependencies]
-rand = "0.8"
-colour = "1"
+rand = "0.10.0"
+colour = "2.1.0"
