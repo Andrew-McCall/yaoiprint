@@ -1,7 +1,16 @@
 [package]
-name = "yaoi-rs"
+name = "yaoi"
 version = "0.1.0"
 edition = "2024"
+description = "A terminal CLI that prints a randomly selected ASCII art image in a random color."
+license = "MIT"
+repository = "https://github.com/Andrew-McCall/yaoi-rs"
+categories = ["command-line-utilities"]
+keywords = ["cli", "ascii-art", "terminal", "art"]
+
+[[bin]]
+name = "yaoi"
+path = "src/main.rs"
 
 [dependencies]
 rand = "0.8"
