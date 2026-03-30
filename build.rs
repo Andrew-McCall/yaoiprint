@@ -6,14 +6,10 @@ fn main() {
 
     let src = fs::read_to_string("src/images").expect("failed to read src/images");
 
-    let images: Vec<&str> = src
-        .split("\nnewline\n")
-        .filter(|s| !s.is_empty())
-        .collect();
+    let images: Vec<&str> = src.split("\nnewline\n").filter(|s| !s.is_empty()).collect();
 
     let mut out = String::from("pub static IMAGES: &[&str] = &[\n");
     for img in &images {
-        // escape backslashes and quotes, then wrap in raw string delimiters
         out.push_str(&format!("    r#\"{}\"#,\n", img));
     }
     out.push_str("];\n");
