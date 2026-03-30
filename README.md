@@ -1,6 +1,10 @@
-# yaoi-rs
+# yaoiprint
 
 A terminal CLI that prints a randomly selected ASCII art image in a random color.
+
+## Example
+
+![yaoiprint](image.png)
 
 ## Usage
 
