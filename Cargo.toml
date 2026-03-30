@@ -1,5 +1,5 @@
 [package]
-name = "yaoi"
+name = "yaoiprint"
 version = "0.1.0"
 edition = "2024"
 description = "A terminal CLI that prints a randomly selected ASCII art image in a random color."
@@ -9,7 +9,7 @@ categories = ["command-line-utilities"]
 keywords = ["cli", "ascii-art", "terminal", "art"]
 
 [[bin]]
-name = "yaoi"
+name = "yaoiprint"
 path = "src/main.rs"
 
 [dependencies]
